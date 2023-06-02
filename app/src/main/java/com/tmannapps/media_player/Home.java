@@ -44,7 +44,7 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent (Home.this, Video_Player.class);
-                intent.putExtra("link", homeBinding.editTextURL.getText());
+                intent.putExtra("link", homeBinding.editTextURL.getText().toString());
                 startActivity(intent);
             }
         });
